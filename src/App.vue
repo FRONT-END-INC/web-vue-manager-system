@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class='body-wrap'>
     <router-view></router-view>
   </div>
 </template>
@@ -11,13 +10,14 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang='sass'>
+  @import 'src/assets/styles/app.scss'
+</style>
+
+<style scoped>
+    .body-wrap{
+        position: relative;
+        width:100%;
+        height:100%;
+    }
 </style>
