@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import Test from '@/components/Test'
 
 Vue.use(Router)
 
@@ -16,13 +14,22 @@ export default new Router({
       component: resolve => require(['@/views/Login.vue'], resolve)
     },
     {
-      path: '/Hello',
-      name: 'Hello',
-      component: Hello
-    }, {
-      path: '/a',
-      name: 'a',
-      component: Test
+      path: '/home',
+      component: resolve => require(['@/views/Home.vue'], resolve),
+      children: [
+        {
+          path: '/Hello',
+          component: resolve => require(['@/components/Hello.vue'], resolve)
+        },
+        {
+          path: '/a',
+          component: resolve => require(['@/components/Test.vue'], resolve)
+        },
+        {
+          path: '/baseTable',
+          component: resolve => require(['@/components/BaseTable.vue'], resolve)
+        }
+      ]
     }
   ]
 })

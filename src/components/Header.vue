@@ -61,11 +61,11 @@
     data(){
       return ({
         login:{
-          image:require('../../assets/image/logo.png')
+          image:require('@/assets/images/logo.png')
         },
         user:{
           name:'罗总',
-          image:require('../../assets/image/user.jpg'),
+          image:require('@/assets/images/logo.png'),
         },
         nav:[
           {name:'表单',hash:'#form'},
@@ -75,7 +75,7 @@
     }
   }
 </script>
-<style>
+<style scope>
   .header {
     position: fixed;
     top:0;
