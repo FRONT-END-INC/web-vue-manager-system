@@ -1,5 +1,5 @@
 <template>
-  <div class="semantic-component">
+  <div class="semantic-component hor-center">
     <div class="ui selection dropdown semanticDropDown">
       <input type="hidden" name="gender" v-model="selected">
       <i class="dropdown icon"></i>
@@ -43,4 +43,3 @@
   }
 </script>
 
-<style></style>

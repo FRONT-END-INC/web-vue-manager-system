@@ -9,6 +9,14 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/login'
+    },
+    {
+      path: '/login',
+      component: resolve => require(['@/views/Login.vue'], resolve)
+    },
+    {
+      path: '/Hello',
       name: 'Hello',
       component: Hello
     }, {
