@@ -32,7 +32,7 @@
         beforeCreate: function () {// 检查登录状态
             const self = this;
             if(localStorage && localStorage.getItem('ms_username')){
-                self.$router.push('/a');
+                self.$router.push('/index');
             }
         },
         methods: {
@@ -42,7 +42,7 @@
                 let password = self.ruleForm.password;
                 if(username && username){
                     localStorage.setItem('ms_username',self.ruleForm.username);
-                    self.$router.push('/a');
+                    self.$router.push('/index');
                 }else{
                     console.log('error submit!!');
                     return false;

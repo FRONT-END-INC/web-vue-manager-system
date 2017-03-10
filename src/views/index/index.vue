@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-  import VueHeader from '@/components/index/Header'
+  import VueHeader from '@/views/index/Header'
   export default {
     components:{
       VueHeader
