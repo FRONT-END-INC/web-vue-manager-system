@@ -2,7 +2,7 @@
     Internal Task Collection
 *******************************/
 
-/* These tasks create packaged files from **dist** components
+/* These tasks create packaged files from **semantic-ui** components
    Not intended to be called directly by a user because
    these do not build fresh from **src**
 */

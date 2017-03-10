@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import Test from '@/components/Test'
+import Index from '@/views/index'
+import Login from '@/views/Login'
+
 
 Vue.use(Router)
 
@@ -13,16 +14,17 @@ export default new Router({
     },
     {
       path: '/login',
-      component: resolve => require(['@/views/Login.vue'], resolve)
+      component: Login
     },
     {
-      path: '/Hello',
-      name: 'Hello',
-      component: Hello
-    }, {
-      path: '/a',
-      name: 'a',
-      component: Test
-    }
+      path:'/index',
+      name:'index',
+      component: Index,
+      children:[
+        {
+          path: '/ss',
+        },
+      ]
+
   ]
 })

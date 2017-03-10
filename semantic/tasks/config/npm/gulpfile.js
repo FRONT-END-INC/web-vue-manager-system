@@ -46,7 +46,7 @@ gulp.task('build-javascript', 'Builds all javascript from source', buildJS);
 gulp.task('build-css', 'Builds all css from source', buildCSS);
 gulp.task('build-assets', 'Copies all assets from source', buildAssets);
 
-gulp.task('clean', 'Clean dist folder', clean);
+gulp.task('clean', 'Clean semantic-ui folder', clean);
 gulp.task('version', 'Displays current version of Semantic', version);
 
 /*--------------

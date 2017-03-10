@@ -152,13 +152,13 @@ module.exports = function(callback) {
             components,
             releases
           ;
-          themes = gulp.src('dist/themes/default/**/*', { base: 'dist/' })
+          themes = gulp.src('semantic-ui/themes/default/**/*', { base: 'semantic-ui/' })
             .pipe(gulp.dest(outputDirectory))
           ;
-          components = gulp.src('dist/components/*', { base: 'dist/' })
+          components = gulp.src('semantic-ui/components/*', { base: 'semantic-ui/' })
             .pipe(gulp.dest(outputDirectory))
           ;
-          releases = gulp.src('dist/*', { base: 'dist/' })
+          releases = gulp.src('semantic-ui/*', { base: 'semantic-ui/' })
             .pipe(gulp.dest(outputDirectory))
           ;
           return mergeStream(themes, components, releases);

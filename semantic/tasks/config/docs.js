@@ -9,7 +9,7 @@ module.exports = {
     eco: '**/*.html.eco'
   },
   paths: {
-    clean: '../docs/out/dist/',
+    clean: '../docs/out/semantic-ui/',
     source: {
       config      : 'src/theme.config',
       definitions : 'src/definitions/',
@@ -20,10 +20,10 @@ module.exports = {
       examples     : '../docs/out/examples/',
       less         : '../docs/out/src/',
       metadata     : '../docs/out/',
-      packaged     : '../docs/out/dist/',
-      uncompressed : '../docs/out/dist/components/',
-      compressed   : '../docs/out/dist/components/',
-      themes       : '../docs/out/dist/themes/'
+      packaged     : '../docs/out/semantic-ui/',
+      uncompressed : '../docs/out/semantic-ui/components/',
+      compressed   : '../docs/out/semantic-ui/components/',
+      themes       : '../docs/out/semantic-ui/themes/'
     },
     template: {
       eco: '../docs/server/documents/'

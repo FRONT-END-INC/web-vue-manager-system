@@ -146,7 +146,7 @@ if(currentConfig && manager.name === 'NPM') {
         .pipe(gulp.dest(manager.root))
       ;
 
-      console.info('Update complete! Run "\x1b[92mgulp build\x1b[0m" to rebuild dist/ files.');
+      console.info('Update complete! Run "\x1b[92mgulp build\x1b[0m" to rebuild semantic-ui/ files.');
 
       return;
     }

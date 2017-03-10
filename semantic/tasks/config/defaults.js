@@ -32,12 +32,12 @@ module.exports = {
       themes      : 'src/themes/'
     },
     output: {
-      packaged     : 'dist/',
-      uncompressed : 'dist/components/',
-      compressed   : 'dist/components/',
-      themes       : 'dist/themes/'
+      packaged     : 'semantic-ui/',
+      uncompressed : 'semantic-ui/components/',
+      compressed   : 'semantic-ui/components/',
+      themes       : 'semantic-ui/themes/'
     },
-    clean : 'dist/'
+    clean : 'semantic-ui/'
   },
 
   // components to include in package

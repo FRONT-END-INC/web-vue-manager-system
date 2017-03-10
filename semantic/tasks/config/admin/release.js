@@ -6,7 +6,7 @@
 module.exports = {
 
   // path to components for repos
-  source     : './dist/components/',
+  source     : './semantic-ui/components/',
 
   // modified asset paths for component repos
   paths: {

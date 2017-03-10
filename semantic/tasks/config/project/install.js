@@ -195,7 +195,7 @@ module.exports = {
     // record version number to avoid re-installing on same version
     json.version = release.version;
 
-    // add dist folder paths
+    // add semantic-ui folder paths
     if(answers.dist) {
       answers.dist = path.normalize(answers.dist);
 
@@ -347,7 +347,7 @@ module.exports = {
             value: 'express'
           },
           {
-            name: 'Custom (Customize all src/dist values)',
+            name: 'Custom (Customize all src/semantic-ui values)',
             value: 'custom'
           }
         ]

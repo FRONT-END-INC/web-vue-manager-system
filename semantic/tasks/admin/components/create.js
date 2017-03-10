@@ -136,7 +136,7 @@ module.exports = function(callback) {
         }
       ;
 
-      // copy dist files into output folder adjusting asset paths
+      // copy semantic-ui files into output folder adjusting asset paths
       gulp.task(task.repo, false, function() {
         return gulp.src(release.source + component + '.*')
           .pipe(plumber())
