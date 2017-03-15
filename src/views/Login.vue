@@ -18,8 +18,6 @@
 </template>
 
 <script>
-    // import semantic from 'semantic'
-    import semanticUI from 'semanticUI'
     export default {
         data: function(){
             return {

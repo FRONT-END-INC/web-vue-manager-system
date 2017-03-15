@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import 'semantic'
 export default {
   name: 'app'
 }
@@ -12,6 +13,9 @@ export default {
 
 <style lang='sass'>
   @import 'src/assets/styles/app.scss'
+</style>
+
+<style src='semanticUI'>
 </style>
 
 <style scoped>
