@@ -17,7 +17,9 @@ var
 try {
   config = requireDotFile('semantic.json');
 }
-catch(error) {}
+catch(error) {
+  console.log("--------------------"+error+"-----------------------");
+}
 
 
 try {

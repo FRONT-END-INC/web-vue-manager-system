@@ -1,7 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+// views
+import Login from '@/views/Login'
+import Home from '@/views/Home'
+
+// components
 import Hello from '@/components/Hello'
 import Test from '@/components/Test'
+import BaseTable from '@/components/BaseTable'
 
 Vue.use(Router)
 
@@ -13,16 +19,25 @@ export default new Router({
     },
     {
       path: '/login',
-      component: resolve => require(['@/views/Login.vue'], resolve)
+      component: Login
     },
     {
-      path: '/Hello',
-      name: 'Hello',
-      component: Hello
-    }, {
-      path: '/a',
-      name: 'a',
-      component: Test
+      path: '/home',
+      component: Home,
+      children: [
+        {
+          path: '/Hello',
+          component: Hello
+        },
+        {
+          path: '/a',
+          component: Test
+        },
+        {
+          path: '/',
+          component: BaseTable
+        }
+      ]
     }
   ]
 })
